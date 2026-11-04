@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -223,7 +224,7 @@ var G=[
 [3,'Winners','w','Beat Rhondda Rising 2\u20130 in the final',u('wel3-eafc')],
 [1,'4th of 8','n','Round-robin: 5 wins, 2 defeats',u('welsh-esports-league1---fifa')]]},
 {k:'Valorant',s:[
-[12,'In progress','p','Group stage starts 27 Oct',u('wel12-valorant')],
+[12,'In progress','p','Group stage under way',u('wel12-valorant')],
 [11,'Champ final','n','Reached the Championship final against W1ZARDS. No score is posted on the hub yet',u('wel11-valorant',1)],
 [10,'Premier semi-finalists','n','Lost 0\u20132 to W1ZARDS in the semi-final',u('wel10-valorant')],
 [8,'Premier runners-up','f','Lost 0\u20132 to LP x GOATS in the final',u('wel8-valorant')],
@@ -234,7 +235,7 @@ var G=[
 [3,'Group stage','n','No wins from 4 group matches',u('wel3-val')],
 [1,'3rd of 8','n','Round-robin: 5 wins, 2 defeats',u('welsh-esports-league1---valorant')]]},
 {k:'Rocket League',s:[
-[12,'In progress','p','Group stage starts 29 Oct',u('wel12-rl')],
+[12,'In progress','p','Group stage under way',u('wel12-rl')],
 [11,'Semi-finalists','n','Lost 0\u20133 to S.E.A. Dragons in the semi-final',u('wel11-rl',1)],
 [10,'Result being added','p','',u('wel10-rl')],
 [9,'Winners','w','Beat S.E.A. Dragons 4\u20131 in the final',u('wel9-rl')],
@@ -273,21 +274,22 @@ document.getElementById('games').innerHTML=gm;
 document.querySelectorAll('#teams .tag').forEach(function(e){e.insertAdjacentHTML('afterbegin',IC(e.textContent))});
 
 var FX=[
-['Valorant',[2026,10,27,20,0],'Round 2','Artists'],
+['Valorant',[2026,10,27,20,0],'Round 2','Artists',13,10],
 ['Counter-Strike',[2026,10,28,20,0],'Round 2','Tribal Esports',0,13],
 ['Counter-Strike',[2026,11,4,20,0],'Round 3','Wrexham Wraiths',0,13],
-['Rocket League',[2026,10,29,19,0],'Round 1','Artists'],
-['Rocket League',[2026,10,29,19,45],'Round 2','Nixed Esports'],
+['Rocket League',[2026,10,29,19,0],'Round 1','Artists',2,3],
+['Rocket League',[2026,10,29,19,45],'Round 2','Nixed Esports',0,3],
 ['Chess',[2026,11,2,19,0],'Round 3','Team 10 (bye)',1,0],
-['Chess',[2026,11,2,20,0],'Round 4','S.E.A. Dragons'],
-['Chess',[2026,11,2,21,0],'Round 5','GOATS ESPORTS'],
-['Valorant',[2026,11,3,19,0],'Round 3','TEMPEZT'],
-['Valorant',[2026,11,3,20,0],'Round 4','S.E.A. Dragons'],
-['Valorant',[2026,11,3,21,0],'Round 5','Wrexham Wraiths'],
+['Chess',[2026,11,2,20,0],'Round 4','S.E.A. Dragons',1,2],
+['Chess',[2026,11,2,21,0],'Round 5','GOATS ESPORTS',3,2],
+['Chess',[2026,11,9,19,0],'Semi Final','Wollfhounds'],
+['Valorant',[2026,11,3,19,0],'Round 3','TEMPEZT',13,2],
+['Valorant',[2026,11,3,20,0],'Round 4','S.E.A. Dragons',7,13],
+['Valorant',[2026,11,3,21,0],'Round 5','Wrexham Wraiths',13,2],
 ['Rocket League',[2026,11,5,19,0],'Round 3','Evolving Hatchlings'],
 ['Rocket League',[2026,11,5,19,45],'Round 4','TEMPEZT'],
 ['Rocket League',[2026,11,5,20,30],'Round 5','Wrexham Wraiths'],
-['Chess',[2026,10,26,20,0],'Round 2','Wizards',1,3]
+['Chess',[2026,10,26,20,0],'Round 2','Wizards',1,2]
 ];
 (function(){
  var D=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],now=new Date();
@@ -342,3 +344,5 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')mod.classLis
 </script>
 </body>
 </html>
+
+</body></html>
